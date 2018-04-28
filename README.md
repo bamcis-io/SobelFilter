@@ -1,5 +1,21 @@
 # Sobel Edge Detector
 
+A Sobel Edge Detection Filter written in OpenCL and C++. The library makes use of FreeImage to load and save image files.
+
+## Example
+
+Here's what the library does:
+
+![original](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/lena.bmp)
+![filtered](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/sobel_lena.bmp)
+
+![original](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/bacteria.jpg)
+![filtered](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/sobel_bacteria.bmp)
+
+![original](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/valve.png)
+![filtered](https://raw.githubusercontent.com/bamcis-io/SobelFilter/master/SobelFilter/sobel_valve.bmp)
+
+
 ## Usage
 
 The RunSobel.cpp gives an example of how to use the library. It is outlined here:
