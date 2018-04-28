@@ -70,5 +70,5 @@ int main(int argc, const char** argv)
 
 	EdgeDetector.SaveImage(OutStream.str().c_str());
 
-	std::cout << "Filter successfully ran and image saved to: " << OutputPath << std::endl;
+	std::cout << "Filter successfully ran and image saved to: " << OutStream.str() << std::endl;
 }
