@@ -5,9 +5,9 @@ const sampler_t Sampler = CLK_NORMALIZED_COORDS_FALSE |
 /*
 // These are not actually needed, but included for reference
 __constant int HorizontalFilter[9] = {
-	-1, 0, 1,
-	-2, 0, 2,
-	-1, 0, 1
+	1, 0, -1,
+	2, 0, -2,
+	1, 0, -1
 };
 
 __constant int VerticalFilter[9] = {
