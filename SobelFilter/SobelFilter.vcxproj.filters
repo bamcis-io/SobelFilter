@@ -19,26 +19,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="bacteria.jpg">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="lena.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="valve.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="sobel_bacteria.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="sobel_lena.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="sobel_valve.bmp">
-      <Filter>Resource Files</Filter>
-    </Image>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="SobelFilter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -51,7 +31,6 @@
     <None Include="SobelFilter.cl">
       <Filter>CL Files</Filter>
     </None>
-    <None Include="common.zip" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SobelFilter.h">
@@ -63,5 +42,25 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\bacteria.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\lena.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\sobel_bacteria.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\sobel_lena.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\sobel_valve.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\valve.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

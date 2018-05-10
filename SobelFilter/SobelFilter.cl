@@ -64,9 +64,9 @@ __kernel void SobelFilter(
 		uint4 OutColor = (uint4)(0, 0, 0, 1);
 
 		// Compute the gradient magnitude
-		OutColor.x = sqrt((float)(Gx.x * Gx.x + Gy.x * Gy.x)); // B
+		OutColor.x = sqrt((float)(Gx.x * Gx.x + Gy.x * Gy.x)); // R
 		OutColor.y = sqrt((float)(Gx.y * Gx.y + Gy.y * Gy.y)); // G
-		OutColor.z = sqrt((float)(Gx.z * Gx.z + Gy.z * Gy.z)); // R
+		OutColor.z = sqrt((float)(Gx.z * Gx.z + Gy.z * Gy.z)); // B
 
 		// Adjust all of the RGB values to not be more than 255
 		if (OutColor.x > 255)
@@ -85,7 +85,7 @@ __kernel void SobelFilter(
 		}
 		
 		// Convert to grayscale using luminosity method
-		uint Gray = 0.21 * OutColor.z + OutColor.x * 0.07 + OutColor.y + 0.72;
+		uint Gray = (OutColor.x * 0.2126) + (OutColor.y * 0.7152) + (OutColor.z * 0.0722);
 
 		// Write the RGB value to the output image
 		write_imageui(outputImage, ImageCoordinate, (uint4)(Gray, Gray, Gray, 0));

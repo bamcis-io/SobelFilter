@@ -117,19 +117,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Image Include="bacteria.jpg" />
-    <Image Include="lena.bmp" />
-    <Image Include="sobel_bacteria.bmp" />
-    <Image Include="sobel_lena.bmp" />
-    <Image Include="sobel_valve.bmp" />
-    <Image Include="valve.png" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="RunSobel.cpp" />
     <ClCompile Include="SobelFilter.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="common.zip" />
     <None Include="run.sh" />
     <None Include="SobelFilter.cl" />
   </ItemGroup>
@@ -137,6 +128,14 @@
     <ClInclude Include="SobelFilter.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\bacteria.jpg" />
+    <Image Include="images\lena.bmp" />
+    <Image Include="images\sobel_bacteria.bmp" />
+    <Image Include="images\sobel_lena.bmp" />
+    <Image Include="images\sobel_valve.bmp" />
+    <Image Include="images\valve.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

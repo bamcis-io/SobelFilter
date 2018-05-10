@@ -392,7 +392,7 @@ int SobelFilter::LoadImage(const char* fileName)
 	cl_channel_order ChannelOrder = CL_RGBA;
 	cl_image_format Format;
 	Format.image_channel_order = ChannelOrder;
-	Format.image_channel_data_type = CL_UNORM_INT8;
+	Format.image_channel_data_type = CL_UNSIGNED_INT8;
 
 	cl_mem_flags Flags = CL_MEM_READ_ONLY | CL_MEM_COPY_HOST_PTR;
 
@@ -444,7 +444,7 @@ int SobelFilter::CreateOutputImage()
 	// Define our output image
 	cl_image_format OutputFormat;
 	OutputFormat.image_channel_order = CL_RGBA;
-	OutputFormat.image_channel_data_type = CL_UNORM_INT8;
+	OutputFormat.image_channel_data_type = CL_UNSIGNED_INT8;
 
 	// OpenCL 2.0
 	/*
