@@ -59,6 +59,9 @@ the file you want to run it against.
 
 ## Revision History
 
+### 1.1.1
+Updated local work size to accomodate non-square or evenly divisible image sizes.
+
 ### 1.1.0
 Fixed the RGB to grey scale conversion.
 

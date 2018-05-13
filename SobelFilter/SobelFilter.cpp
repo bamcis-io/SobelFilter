@@ -290,7 +290,7 @@ int SobelFilter::Run()
 		return ErrNum;
 	}
 
-	size_t LocalWorkSize[2] = { 16, 16 };
+	size_t LocalWorkSize[2] = { 1, 1 };
 
 	// Use this to find the maximum local work size
 	/*
